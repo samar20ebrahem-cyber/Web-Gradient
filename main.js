@@ -35,6 +35,9 @@ class NotesApp{
     noteCard.style.backgroundColor=bgColorValue;
     noteCard.style.color=textColorValue;
     noteCard.textContent=textValue;
+    const noteTextSpan = document.createElement('span');
+    noteTextSpan.textContent = textValue;
+    noteCard.appendChild(noteTextSpan);
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
     deleteBtn.style.cursor = 'pointer'
